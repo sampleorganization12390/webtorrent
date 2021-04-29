@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: electron
+    versions:
+    - 11.2.1
+    - 11.2.2
+    - 11.2.3
+    - 11.3.0
+    - 12.0.0
+    - 12.0.1
+    - 12.0.2
+    - 12.0.4
+  - dependency-name: tape
+    versions:
+    - 5.1.1
+    - 5.2.0
+    - 5.2.1
+  - dependency-name: parse-torrent
+    versions:
+    - 9.1.1
+  - dependency-name: airtap
+    versions:
+    - 4.0.1
